@@ -1,0 +1,31 @@
+@media (max-width: 960px) {
+ body {
+ 	background-color: red;
+ 	margin-left: 5%; /*500÷960=52%*/
+ 	font-size: 1.5em; /* 48 ÷ 16 = 3*/
+ }
+}
+
+@media screen and (max-width: 960px) {
+ body {
+ background-color: red;
+ }
+}
+
+@media screen and (max-width: 768px) {
+ body {
+ background-color: orange;
+ }
+} 
+
+@media screen and (max-width: 550px) {
+ body {
+ background-color: yellow;
+ }
+} 
+
+@media screen and (max-width: 320px) {
+ body {
+ background-color: green;
+ }
+}
