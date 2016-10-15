@@ -1,0 +1,12 @@
+<div ng-controller="ProgramCtrl">
+	<div class="row">
+		<table class="table">
+			<tbody>
+				<tr ng-repeat="program in programs">
+					<th scope="row">{{program.name}}</th>
+					<td><button ng-click="goToProgram(program)" type="button" class="btn btn-primary">Ir</button></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

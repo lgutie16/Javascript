@@ -1,0 +1,20 @@
+<div ng-controller="ContactCtrl">
+	<div class="row pull-right">
+		<form class="form-inline" ng-submit="submit()" ng-model="addForm" name="addForm">
+		  <div class="form-group">
+		    <input type="text" class="form-control" ng-model="username" id="username" placeholder="Username">
+		  </div>
+		  <button type="submit" class="btn btn-default">+</button>
+		</form>
+	</div>
+	<div class="row">
+		<table class="table">
+			<tbody>
+				<tr ng-repeat="contact in contacts">
+					<th scope="row">{{contact.username}}</th>
+					<td><button type="button" class="btn btn-primary" ng-click="delete(contact)">-</button></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

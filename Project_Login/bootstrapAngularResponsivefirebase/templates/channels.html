@@ -1,0 +1,12 @@
+<div ng-controller="ChannelsCtrl">
+	<div class="row">
+		<table class="table">
+			<tbody>
+				<tr ng-repeat="channel in channels">
+					<th scope="row">{{channel.name}}</th>
+					<td><button ng-click="goToPrograms(channel)" type="button" class="btn btn-primary">Ir</button></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

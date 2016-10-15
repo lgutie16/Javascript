@@ -1,0 +1,45 @@
+<!doctype html>
+<html ng-app="youRadio">
+<head>
+<title>youRadio</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css"> 
+<link rel="stylesheet" media="screen" href="css/screenstyle.css"> 
+
+<script src="js/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-cookies.js"></script>
+
+<script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+<script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
+<script src="js/angular-ui-router.min.js"></script>
+<script src="js/ui-bootstrap-tpls-0.13.3.min.js"></script>
+
+<script src="js/angular/module.js"></script>
+<script src="js/angular/controllers/master-ctrl.js"></script>
+<script src="js/angular/controllers/init-ctrl.js"></script>
+<script src="js/angular/controllers/login-ctrl.js"></script>
+<script src="js/angular/controllers/contact-ctrl.js"></script>
+<script src="js/angular/controllers/channels-ctrl.js"></script>
+<script src="js/angular/controllers/program-ctrl.js"></script>
+<script src="js/angular/controllers/programdetail-ctrl.js"></script>
+<script src="js/angular/routes.js"></script>
+<script src="js/angular/services/ref.factory.js"></script>
+<script src="js/angular/services/crud.factory.js"></script>
+<script src="js/angular/services/login-service.js"></script>
+<script src="js/angular/services/contact-service.js"></script>
+<script src="js/angular/services/channel-service.js"></script>
+<script src="js/angular/services/program-service.js"></script>
+
+</head>
+<body ng-controller="MasterCtrl">
+<div class="container">
+
+  <div ui-view></div>
+
+
+</div>
+</div>
+</body>
+</html>

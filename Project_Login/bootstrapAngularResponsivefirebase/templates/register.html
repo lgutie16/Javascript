@@ -1,0 +1,21 @@
+<div ng-controller="LoginCtrl">
+<div class="row">
+<div class="col-md-12 text-center">
+<form name="registerForm" ng-model="registerForm" ng-submit="newUserSubmit()">
+<div class="form-group">
+<label for="name">Username</label>
+<input type="text" class="form-control" ng-model="registerForm.username" id="username" placeholder="Username">
+</div>
+<div class="form-group">
+<label for="password">Password</label>
+<input type="password" class="form-control" ng-model="registerForm.password" id="password" placeholder="Password">
+</div>
+<div class="form-group">
+<label for="passwordC">Password Confirm</label>
+<input type="password" class="form-control" ng-model="registerForm.passwordC" id="passwordC" placeholder="Password Confirm">
+</div>
+<button type="submit" class="btn btn-default">Register</button>
+</form>
+</div>
+</div>
+</div>
