@@ -1,0 +1,19 @@
+<ion-view title="Program - Nos fuimos" id="page8">
+    <ion-content padding="true" class="has-header">
+        <iframe src="http://tunein.com/embed/player/s16182/" style="width:100%;height:100px;" scrolling="no" frameborder="no"></iframe>
+
+        <ion-list id="programNosFuimos-list8">
+            <ion-item ng-repeat="message in messages"id="programNosFuimos-list-item25">{{message.username}} : {{message.message}}</ion-item>
+        </ion-list>
+
+        <div id="programNosFuimos-container1">
+            <form class="form-inline" ng-submit="addMessage(text)" ng-model="addForm" name="addForm">
+                <label class="item item-input" id="programNosFuimos-input7">
+                    <input type="text" class="form-control" ng-model="text" id="text" placeholder="Enviar mensaje">
+                </label>
+                <button type="submit" class="button button-positive  icon ion-android-arrow-dropright"></button>
+            </form>
+             <button type="button" ng-click="talk()" class="button button-positive">talk</button>
+        </div>
+    </ion-content>
+</ion-view>

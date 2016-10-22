@@ -19,7 +19,6 @@ function ProgramDetailCtrl($scope, $stateParams, programService,$cookies) {
     message.message=text;
     message.username=$cookies.get("username");
     $scope.messages.$add(message);
-
   }
   
 }

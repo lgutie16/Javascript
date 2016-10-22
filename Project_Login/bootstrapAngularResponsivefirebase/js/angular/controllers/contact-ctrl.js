@@ -10,6 +10,8 @@ function ContactCtrl($scope, contactService) {
   function init(){
    $scope.contacts=contactService.getAll();
   }
+
+  
   $scope.submit = function() {
   	var contact={'username':$scope.username};
   	contactService.add(contact);

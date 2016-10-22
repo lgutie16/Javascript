@@ -1,4 +1,4 @@
-FIREBASE: CRUD
+FIREBASE: Database (CRUD)
 
 Run app:
 	(http-server installed)
@@ -9,7 +9,7 @@ Run app:
 
 
 LOGIN:  lgutie16
-	diplomado
+		diplomado
 
 
 	

@@ -31,5 +31,10 @@ youRadioApp.config(function($stateProvider, $urlRouterProvider) {
       url: "/program/:programId",
       templateUrl: "templates/program.html",
       controller:"ProgramDetailCtrl"
+    })
+    .state('chat', {
+      url: "/chat/:programId",
+      templateUrl: "templates/chat.html",
+      controller:"ChatCtrl"
     });
 });

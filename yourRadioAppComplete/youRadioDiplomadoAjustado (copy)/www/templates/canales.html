@@ -1,0 +1,13 @@
+<ion-view title="Canales" id="page2">
+    <ion-content padding="true" class="has-header">
+        <ion-list id="canales-list3">
+            <label class="item item-input">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input type="search" placeholder="Buscar canales" ng-model="search.name">
+            </label>
+            <ion-item ng-repeat="channel in channels | filter:search" class="item-icon-right" id="canales-list-item4" ng-click="goToPrograms(channel)">{{channel.name}}
+                <i class="icon ion-android-favorite-outline"></i>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

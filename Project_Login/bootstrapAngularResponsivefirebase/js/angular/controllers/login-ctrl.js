@@ -10,7 +10,7 @@ function LoginCtrl($scope, $state, loginService, $cookies) {
 
   function getUsers() {
       loginService.getSynchronizedUsers().then(function(data){
-        $scope.users = data;
+        $scope.users = data
       }).catch(function(error){
         console.log(error);
       }); 
@@ -29,6 +29,7 @@ function LoginCtrl($scope, $state, loginService, $cookies) {
             }else{
               alert("Perfecto");
               $cookies.put("username", $scope.username);
+              $cookies.put("date", Date());
               $state.go('channels');   
             }
             

@@ -16,7 +16,7 @@ function ProgramCtrl($scope, $stateParams, programService, $state) {
   }
 
   $scope.goToProgram = function(programId){
-    $state.go("program", {"programId":programId.$id});
+    $state.go("chat", {"programId":programId.$id});
   }
   
 }

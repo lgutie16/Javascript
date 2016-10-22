@@ -15,6 +15,10 @@ function ChannelsCtrl($scope, $state, channelService) {
    });
   }
 
+  $scope.submit = function(channel){
+    $scope.channels.$add(channel);
+  }
+
   $scope.goToPrograms = function(channel){
     $state.go("programs", {"channelId":channel.$id});
   }

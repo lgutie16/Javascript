@@ -1,0 +1,16 @@
+<ion-view title="Programs - Radio Uno" id="page7">
+    <ion-content padding="true" class="has-header">
+        <form id="programsRadioUno-form4" class="list">
+            <label class="item item-input">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input type="search" placeholder="Buscar programas">
+            </label>
+        </form>
+        <iframe src="http://tunein.com/embed/player/s16182/" style="width:100%;height:100px;" scrolling="no" frameborder="no"></iframe>
+        <ion-list id="programsRadioUno-list7">
+            <ion-item ng-repeat="program in programs" class="item-icon-right" id="canales-list-item4" ng-click="goToProgram(program)">{{program.name}}
+                <i class="icon ion-android-favorite-outline"></i>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
