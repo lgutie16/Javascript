@@ -1,0 +1,29 @@
+<div ng-controller="ChannelsCtrl">
+	<div >
+		<div class="row" >
+			<div class="col-md-12 text-center">
+				<form name="userForm" ng-model="userForm" ng-submit="submit(channel)">
+					<div class="form-group">
+						<label for="username">ID</label>
+						<input type="text" class="form-control" ng-model="channel.id" id="id" placeholder="id">
+					</div>
+					<div class="form-group">
+						<label for="name">Nombre</label>
+						<input type="text" class="form-control" ng-model="channel.name" id="name" placeholder="Name">
+					</div>
+					<button type="submit" class="btn btn-default">Agregar</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<table class="table">
+			<tbody>
+				<tr ng-repeat="channel in channels">
+					<th scope="row">{{channel.name}}</th>
+					<td><button ng-click="goToPrograms(channel)" type="button" class="btn btn-primary">Ir</button></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

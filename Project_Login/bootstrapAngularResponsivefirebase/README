@@ -1,0 +1,17 @@
+FIREBASE: Database (CRUD)
+
+Run app:
+	(http-server installed)
+	
+	exec: $ http-server -v 
+
+	select one of the given local ips in the browser.
+
+
+LOGIN:  lgutie16
+		diplomado
+
+
+	
+
+

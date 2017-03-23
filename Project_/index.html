@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html ng-app="youRadio">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>YouRadio</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" media="screen" href="css/screenstyle.css" />
+  
+  
+	<!-- modules, controllers, servicios-->
+	<script src="js/angular.min.js"></script>
+    <script src="js/ui-bootstrap-tpls-2.1.3.min.js"></script>  
+    <script src="js/angular/modulo.js"></script>
+    <script src="js/angular/controllers/master-ctrl.js"></script> 
+    <script src="js/angular-ui-router.min.js"></script> 
+    <script src="js/angular/routes.js"></script> <!--Como se va a hacer la redirección de los links-->
+    <script src="js/angular/controllers/register-ctrl.js"></script>
+    <script src="js/angular/controllers/login-ctrl.js"></script>
+    <script src="js/angular/controllers/contact-ctrl.js"></script>
+      <script src="js/angular/controllers/radio-ctrl.js"></script>
+    <script src="js/angular/controllers/programs-ctrl.js"></script>
+    <script src="js/angular/services/login-service.js"></script>
+    <script src="js/angular/services/register-service.js"></script>
+    <script src="js/angular/services/contact-service.js"></script>
+    <script src="js/angular/services/radio-service.js"></script>
+    <script src="js/angular/services/programs-service.js"></script>
+    <script src="js/angular/services/localStorage-service.js"></script>
+    <script src="js/angular/services/db-service.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script> 
+</head>
+<body ng-controller="MasterCtrl">
+
+  <div class="container">
+      <div class="row">
+          <ul class="nav nav-pills">
+              <li role="presentation"><a href="#">Home</a></li>
+              <li role="presentation"><a href="#/register">Sign in</a></li>
+              <li role="presentation"><a href="#/login">Log in</a></li>
+          </ul>
+      </div>
+  </div>
+  <div class="jumbotron jum-b">
+      <div class="container">
+          <h1>yOU <em>rADIA</em>TION!</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+          <small>{{myName}} </small>
+          <small> 
+              <div class="row"> 
+                <div class="col-md-6" ng-if="wellcome">Bienvenido</div>
+                <div class="col-md-6"  ng-if="!wellcome">No bienvenido</div>
+              </div>
+          </small>
+      </div>
+  </div>
+    
+  <div class="container">
+   
+      <div  ui-view></div>
+  </div>
+
+  
+ 
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
+    
+</body>
+</html>
